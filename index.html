@@ -69,13 +69,13 @@
 
     form.addEventListener("submit", function(e) {
       e.preventDefault();
-
       const data = {
-        name: form.name.value,
-        email: form.email.value,
-        mobile: form.mobile.value,
-        location: form.location.value,
-        age: form.age.value,
+            name: form.name.value,
+            email: form.email.value,
+           mobile: form.mobile.value,
+           location: form.location.value,
+           age: form.age.value,
+           gender: form.gender.value // ✅ Add this line
       };
 
       fetch("https://script.google.com/macros/s/AKfycbxgj3HyjtRAybIyNgOOBIMeANoP8_BtybhdocEinRjGJvSdjvr-G0CG0TvCnCCIpr4Afg/exec", {
