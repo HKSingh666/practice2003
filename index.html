@@ -46,12 +46,17 @@
 </head>
 <body>
 
-  <form id="contact-form">
+<form id="contact-form" >
     <h2>Contact Us</h2>
+    <label for="name">Enter Your Name:</label>
  <input type="text" name="name" placeholder="Full Name" required><br><br>
+    <label for="email">Enter your Email:</label>
     <input type="email" name="email" placeholder="Email" required><br><br>
+    <label for="mobile">Enter your Mobile Number:</label>
     <input type="tel" name="mobile" placeholder="Mobile" required><br><br>
+    <label for="location">Enter Your Location:</label>
     <input type="text" name="location" placeholder="location" required><br><br>
+    <label for="age">Enter your Age:</label>
     <input type="number" name="age" placeholder="Age" required><br><br>
     <select name="gender" required>
       <option value="">Select Gender</option>
@@ -91,6 +96,7 @@
       }).catch((err) => {
         responseEl.textContent = "Failed to send message.";
       });
+      responseEl.textContent = "Sending...";
     });
   </script>
 
