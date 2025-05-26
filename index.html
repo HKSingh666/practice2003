@@ -92,11 +92,13 @@
         body: JSON.stringify(data)
       }).then(() => {
         responseEl.textContent = "Message sent successfully!";
+         responseEl.style.color = "green";
         form.reset();
       }).catch((err) => {
         responseEl.textContent = "Failed to send message.";
       });
       responseEl.textContent = "Sending...";
+       responseEl.style.color = "blue";
     });
   </script>
 
